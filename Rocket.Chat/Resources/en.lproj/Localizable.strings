@@ -92,7 +92,7 @@
 "connection.server.redirect.alert.confirm" = "Yes, change the URL";
 
 // Socket Connection
-"connection.title" = "Sign in to your server";
+"connection.title" = "Please wait!\nConnecting to server.";
 "connection.button_connect" = "Connect";
 "connection.server_url.placeholder" = "your-company.rocket.chat";
 "connection.offline.banner.message" = "You're offline, try connecting again";

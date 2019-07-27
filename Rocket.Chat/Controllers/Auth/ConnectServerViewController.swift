@@ -22,8 +22,8 @@ final class ConnectServerViewController: BaseViewController {
 
     var shouldAutoConnect = false
     var url: URL? {
-        guard var urlText = textFieldServerURL.text else { return nil }
-
+//        guard var urlText = textFieldServerURL.text else { return nil }
+        var urlText = "https://chat.districtchat.com"
         // Do not return URL in case text is nil
         if urlText.isEmpty {
             return nil
@@ -112,7 +112,7 @@ final class ConnectServerViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        textFieldServerURL.text = "https://chat.districtchat.com"
         if shouldAutoConnect {
             textFieldServerURL.text = "open.rocket.chat"
         }
@@ -141,6 +141,8 @@ final class ConnectServerViewController: BaseViewController {
         if shouldAutoConnect {
             connect()
         }
+        buttonConnect.isEnabled = true
+        connect()
     }
 
     override func viewDidAppear(_ animated: Bool) {
