@@ -109,7 +109,7 @@ class LoginTableViewController: BaseTableViewController {
 
         updateFieldsPlaceholders()
         updateUsernameSettings()
-
+        navigationItem.hidesBackButton = true
         if !AppManager.supportsMultiServer {
             navigationItem.hidesBackButton = true
         }
